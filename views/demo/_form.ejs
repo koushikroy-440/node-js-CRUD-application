@@ -1,0 +1,43 @@
+<!-- form handling -->
+<form method="POST" id="add_user">
+    <div class="new_user">
+      <div class="form-group">
+        <label for="name" class="text-light">Name</label>
+        <input type="hidden" name="id" value="" />
+        <input
+          type="text"
+          name="email"
+          value=""
+          placeholder="example@example.com"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="text-light">Email</label>
+        <input
+          type="text"
+          name="email"
+          value=""
+          placeholder="example@example.com"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="gender" class="text-light">Gender</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male" class="text-light">Male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female" class="text-light">Female</label>
+      </div>
+      <div class="form-group">
+          <label for="gender" class="text-light">Status</label>
+          <input type="radio" name="status" id="male" value="active" />
+          <label for="male" class="text-light">Active</label>
+          <input type="radio" name="status" id="female" value="inactive" />
+          <label for="female" class="text-light">Inactive</label>
+      </div>
+      <div class="form-group">
+          <button type="submit" class="btn text-dark update">Save</button>
+      </div>
+    </div>
+  </form>

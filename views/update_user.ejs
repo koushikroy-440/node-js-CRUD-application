@@ -1,0 +1,65 @@
+<!-- include header -->
+<%- include('demo/_header')%>
+<!-- /include header -->
+<!-- Main Site -->
+<main id="site-main">
+  <div class="container">
+    <div class="box-nav d-flex justify-between">
+      <div class="filter">
+        <a href="/"><i class="fa fa-angle-double-left"></i>All Users</a>
+      </div>
+    </div>
+    <div class="form-title text-center">
+      <h2 class="text-dark">Update User</h2>
+      <span class="text-light">Use the below form to update an account</span>
+    </div>
+
+    <!-- form handling -->
+<form method="POST" id="update_user">
+    <div class="new_user">
+      <div class="form-group">
+        <label for="name" class="text-light">Name</label>
+        <input type="hidden" name="id" value="" />
+        <input
+          type="text"
+          name="email"
+          value=""
+          placeholder="example@example.com"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="text-light">Email</label>
+        <input
+          type="text"
+          name="email"
+          value=""
+          placeholder="example@example.com"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="gender" class="text-light">Gender</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male" class="text-light">Male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female" class="text-light">Female</label>
+      </div>
+      <div class="form-group">
+          <label for="gender" class="text-light">Status</label>
+          <input type="radio" name="status" id="male" value="active" />
+          <label for="male" class="text-light">Active</label>
+          <input type="radio" name="status" id="female" value="inactive" />
+          <label for="female" class="text-light">Inactive</label>
+      </div>
+      <div class="form-group">
+          <button type="submit" class="btn text-dark update">Save</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</main>
+<!-- /Main Site -->
+<!-- include footer -->
+<%- include('demo/_footer')%>
+<!-- /include footer -->
